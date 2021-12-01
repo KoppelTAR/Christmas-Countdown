@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Mountains+of+Christmas&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    color: #fff;
+    background: #333;
+    overflow: hidden;
+}
+
+.container {
+    background-image: url('../img/pexels-candis-hidalgo-639110.jpg');
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+
+.inner-container {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 10rem;
+    text-align: center;
+}
+
+.inner-container h1 {
+    font-family: 'Mountains of Christmas', cursive;
+    font-size: 5rem;
+    color: rgb(35, 128, 35);
+}
+
+.countdown {
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.countdown div {
+    padding: 0.6rem;
+    border: 1px solid #333;
+    border-radius: 5px;
+    margin: 0.3rem;
+    background-color: rgb(35, 128, 35);
+}
+
+@media (max-width:568px) {
+    .inner-container h1 {
+        font-size: 3rem;
+        padding: 3rem;
+    }
+
+    .countdown {
+        flex-direction:  column;
+    }
+}
